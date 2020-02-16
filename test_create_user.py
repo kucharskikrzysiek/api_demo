@@ -5,9 +5,9 @@ __author__ = "Krzysztof Kucharski"
 import allure
 import pytest
 import requests
-import common_methods
 from datetime import datetime
 from http import HTTPStatus
+import common_methods
 from data.test_data import generate_user_data
 
 

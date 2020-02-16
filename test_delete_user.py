@@ -6,8 +6,8 @@ import pytest
 import allure
 import requests
 #from datetime import datetime
-import common_methods
 from http import HTTPStatus
+import common_methods
 
 
 @pytest.fixture(scope="module", autouse=True)

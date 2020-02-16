@@ -5,9 +5,9 @@ __author__ = "Krzysztof Kucharski"
 import allure
 import pytest
 import requests
-import common_methods
 from datetime import datetime
 from http import HTTPStatus
+import common_methods
 from data.test_data import generate_user_data
 
 
@@ -46,7 +46,7 @@ def check_lower_parameter_level(name, parameters, _response):
             assert _response.json()[name][parameter], f"In the response parameter {name} has not been found"
 
 
-def test_updated_new_user(context):
+def test_updated_user(context):
     _response = context[0]
     with allure.step('check if user has been updated'):
         pytest.skip('jsonplaceholder does not update an entry\n'
